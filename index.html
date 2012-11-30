@@ -55,7 +55,6 @@
             function submitWatch()
             {
               $('#login').submit(function(me) {
-						alert("login function started");
                           me.preventDefault();
                           $.ajax({
                               url: 'http://www.lmoses.com/posty/index.php?at=ajax_login',
@@ -67,6 +66,7 @@
                                  if(data.user!='nobody')
                                  {
                                     $.mobile.path.set("#home");
+									alert("invalid login");
                                     console.log("show test");
                                  }
                               console.log(data.user + " " + data.id);
