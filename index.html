@@ -54,6 +54,7 @@
             }
             function submitWatch()
             {
+			 
               $('#login').submit(function(me) {
                           me.preventDefault();
                           $.ajax({
@@ -66,7 +67,6 @@
                                  if(data.user!='nobody')
                                  {
                                     $.mobile.path.set("#home");
-									alert("invalid login");
                                     console.log("show test");
                                  }
                               console.log(data.user + " " + data.id);
