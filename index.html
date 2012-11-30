@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=320; user-scalable=no" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Minimal AppLaud App</title>
+    <title>Cache Pics</title>
 
       <link rel="stylesheet" href="js/jquery.mobile.structure-1.2.0.min.css" />
       <link rel="stylesheet" href="style.css">
@@ -55,6 +55,7 @@
             function submitWatch()
             {
               $('#login').submit(function(me) {
+						alert("login function started");
                           me.preventDefault();
                           $.ajax({
                               url: 'http://www.lmoses.com/posty/index.php?at=ajax_login',
